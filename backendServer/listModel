@@ -1,0 +1,11 @@
+import mongoose from "mongoose";
+
+const newSchema = mongoose.Schema({
+  titre: String,
+  description: String,
+  date: String,
+});
+
+const listSchema = mongoose.model("student", newSchema);
+
+export default listSchema;
